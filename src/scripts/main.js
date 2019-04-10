@@ -1,8 +1,6 @@
-import sayHello from "./hello"
-import sayGoodbye from "./goodbye"
-import SandwichMaker from "./sandwichMaker"
 
-sayHello()
-sayGoodbye()
+import listPlaces from "./list-traveler"
 
-SandwichMaker.placeOrder("rye", "capicola", "provolone")
+listPlaces.listAllInterests()
+
+
