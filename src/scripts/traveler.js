@@ -29,7 +29,7 @@ placeArticle.appendChild(buildElement.buildElement("p", undefined, placeObject.r
 
 
 
-
+return placeArticle
 
 
 }

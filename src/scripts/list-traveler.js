@@ -9,12 +9,12 @@ export default {
             console.log(interestsArray)
         let interestsFragment = document.createDocumentFragment();
 
-        interestsArray.forEach(interest => {
-            let interestHTML = html.buildPlaceHTML(interest);
+        interestsArray.forEach(interests => {
+            let interestHTML = html.buildPlaceHTML(interests);
             interestsFragment.appendChild(interestHTML)
         })
 
-        const interestsSection = document.getElementsByClassName("display-container")
+        const interestsSection = document.getElementById("display-container")
         dom.clearElement(interestsSection)
         interestsSection.appendChild(interestsFragment)
         })
