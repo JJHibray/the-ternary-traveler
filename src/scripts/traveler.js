@@ -21,11 +21,14 @@ buildPlaceHTML(placeObject) {
 
 const placeArticle = buildElement.buildElement("article", `interestList--${placeObject.id}`);
 placeArticle.appendChild(buildElement.buildElement("h3", undefined, placeObject.name));
-placeArticle.appendChild(buildElement.buildElement("p", undefined, placeObject.description))
-placeArticle.appendChild(buildElement.buildElement("p", undefined, placeObject.cost))
-placeArticle.appendChild(buildElement.buildElement("p", undefined, placeObject.review))
+placeArticle.appendChild(buildElement.buildElement("p", undefined, placeObject.description));
+placeArticle.appendChild(buildElement.buildElement("p", undefined, placeObject.cost));
+placeArticle.appendChild(buildElement.buildElement("p", undefined, placeObject.review));
+placeArticle.appendChild(buildElement.buildElement("p", undefined, placeObject.place.name));
 
-
+// let editPlaceButton = buildElement("button", undefined, "Edit Place")
+// placeArticle.appendChild(editPlaceButton);
+// editParkButton.addEventListener
 
 
 
@@ -34,3 +37,4 @@ return placeArticle
 
 }
 }
+
