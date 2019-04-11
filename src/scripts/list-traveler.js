@@ -7,16 +7,17 @@ export default {
     listAllInterests() {
         api.getAllInterests().then(interestsArray => {
             console.log(interestsArray)
-        let interestsFragment = document.createDocumentFragment();
+            let interestsFragment = document.createDocumentFragment();
 
-        interestsArray.forEach(interest => {
-            let interestHTML = html.buildPlaceHTML(interest);
-            interestsFragment.appendChild(interestHTML)
-        })
+            interestsArray.forEach(interests => {
+                let interestHTML = html.buildPlaceHTML(interests);
+                interestsFragment.appendChild(interestHTML)
+            })
 
-        const interestsSection = document.getElementsByClassName("display-container")
+        const interestsSection = document.getElementById("display-container")
         dom.clearElement(interestsSection)
         interestsSection.appendChild(interestsFragment)
         })
     }
+
 }
