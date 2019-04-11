@@ -26,13 +26,19 @@ placeArticle.appendChild(buildElement.buildElement("p", undefined, placeObject.c
 placeArticle.appendChild(buildElement.buildElement("p", undefined, placeObject.review));
 placeArticle.appendChild(buildElement.buildElement("p", undefined, placeObject.place.name));
 
-// let editPlaceButton = (buildElement.buildElement("button", undefined, "Edit Place"))
-// placeArticle.appendChild(editPlaceButton);
-// editParkButton.addEventListener("click", )
+const editPlaceButton = (buildElement.buildElement("button", undefined, "Edit Place"))
+placeArticle.appendChild(editPlaceButton);
+editPlaceButton.addEventListener("click", () => {
+    console.log("edit button pressed")
+})
 
-// let deletePlaceButton = (buildElement.buildElement("button", undefined, "Delete Place"))
-// placeArticle.appendChild(deletePlaceButton);
-// deletePlaceButton.addEventListener("click", )
+
+
+const deletePlaceButton = (buildElement.buildElement("button", undefined, "Delete Place"))
+placeArticle.appendChild(deletePlaceButton);
+deletePlaceButton.addEventListener("click", () => {
+    console.log("delete Button pressed")
+})
 
 
 return placeArticle
