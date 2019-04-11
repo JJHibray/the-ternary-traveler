@@ -26,15 +26,18 @@ placeArticle.appendChild(buildElement.buildElement("p", undefined, placeObject.c
 placeArticle.appendChild(buildElement.buildElement("p", undefined, placeObject.review));
 placeArticle.appendChild(buildElement.buildElement("p", undefined, placeObject.place.name));
 
-// let editPlaceButton = buildElement("button", undefined, "Edit Place")
+// let editPlaceButton = (buildElement.buildElement("button", undefined, "Edit Place"))
 // placeArticle.appendChild(editPlaceButton);
-// editParkButton.addEventListener
+// editParkButton.addEventListener("click", )
 
+// let deletePlaceButton = (buildElement.buildElement("button", undefined, "Delete Place"))
+// placeArticle.appendChild(deletePlaceButton);
+// deletePlaceButton.addEventListener("click", )
 
 
 return placeArticle
 
 
 }
-}
 
+}
